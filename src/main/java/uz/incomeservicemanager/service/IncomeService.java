@@ -28,9 +28,7 @@ public class IncomeService {
     @Transactional
     public Income saveIncome(Income income) {
         if (income.getId() != null) {
-            Income existingIncome = incomeRepository.
-                    findById(income.getId()).
-                    orElseThrow(() -> new IncomeNotFoundException(income.getId()));
+            Income existingIncome = incomeRepository.findById(income.getId()).orElseThrow(() -> new IncomeNotFoundException(income.getId()));
             existingIncome.setAmount(income.getAmount());
             existingIncome.setDate(income.getDate());
             existingIncome.setDescription(income.getDescription());

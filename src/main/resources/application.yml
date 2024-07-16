@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: IncomeServiceManager
+  datasource:
+    url: jdbc:postgresql://localhost:5432/incomeManagerDB
+    username: mamatsalay
+    password: 1234567890
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+
+logging:
+  level:
+    org.springframework.security: TRACE

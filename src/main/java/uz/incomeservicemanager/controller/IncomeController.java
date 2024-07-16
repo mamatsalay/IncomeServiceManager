@@ -1,13 +1,10 @@
 package uz.incomeservicemanager.controller;
 
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import uz.incomeservicemanager.model.Income;
 import uz.incomeservicemanager.service.IncomeService;
-
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/incomes")
